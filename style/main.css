@@ -11,7 +11,7 @@
 
 body {
     background-color: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 }
 
@@ -24,9 +24,10 @@ header .container {
 
 header .logo {
     color: var(--vermelho);
-    font-family: 'Arial Black', Times;
+    font-family: 'Arial', Times;
     font-size: 40px;
     margin-left: 5px;
+    font-weight: 800;
 }
 
 header nav a {
@@ -42,9 +43,9 @@ header nav a:hover {
 /*filme principal*/
 .filme-principal {
     font-size: 20px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('/img/pizza-show-capa.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('/img/Hells-capa.jpg');
     height: 400px;
-    /* width: 40%; */
+    /* width: 50%; */
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -54,8 +55,55 @@ header nav a:hover {
 
 .filme-principal .descricao {
     margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: justify;
 }
 
 .titulo {
     font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10%;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-right: 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: rgb(245, 245, 245);
+    color: rgb(31, 31, 31);
+    transition: .4s ease all;
+}
+
+.botao i {
+    margin-right: 12px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.box-filme:hover {
+    opacity: 0.8;
+}
+
+.carousel-filmes {
+    margin-top: 10px;
 }
